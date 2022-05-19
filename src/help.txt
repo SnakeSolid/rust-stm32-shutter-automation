@@ -1,0 +1,6 @@
+Available commands:
+    stop                             immediately stop all shutters;
+    stop <I>                         immediately stop I-th shutter;
+    up <I>                           start moving I-th shutter up;
+    down <I>                         start moving I-th shutter down;
+    limit <I> [up <N>] [down <N>]    set up or down time limit for I-th channel (milliseconds).

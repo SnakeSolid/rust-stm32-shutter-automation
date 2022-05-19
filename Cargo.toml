@@ -1,0 +1,26 @@
+[package]
+name = "stm32-shutter-automation"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "s"
+panic = "abort"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+cortex-m-semihosting = "0.5"
+embedded-hal = "0.2"
+nb = "1.0"
+
+[dependencies.stm32f1xx-hal]
+version = "0.9"
+features = [ "rt", "stm32f103", "medium" ]
+
+[dependencies.nom]
+version = "7.1"
+default-features = false
+features = [ ]
